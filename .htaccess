@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^www\.checkmylucktoday\.com$
+RewriteRule ^/?$ "http\:\/\/checkmylucktoday\.com\/" [R=301,L]

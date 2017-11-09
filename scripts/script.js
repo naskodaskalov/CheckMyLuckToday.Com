@@ -1,6 +1,5 @@
 (function checkLuck () {
-  let arr = [
-    'new friend',
+  let arr = [ 'new friend',
     'prosperity',
     'money',
     'travelling',
@@ -16,8 +15,7 @@
     'i had more problems with myself than with any other person',
     'Things can be tough, Times can be rough. But if you work hard enough, You will achieve triumph!',
     'Work hard and you will surely achieve success.',
-    'Today you will be calm and happy. All turn the way you want it to be.'
-  ]
+    'Today you will be calm and happy. All turn the way you want it to be.' ]
   let randomLuck = ''
   let getLuck = setTimeout(() => {
     if (window.localStorage.getItem('last-entrance')) {
