@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:url"                content="http://checkmylucktoday.com/" />
+  <meta property="fb:app_id" content="374004366387436"/>
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="Check your luck for the day" />
+  <meta property="og:description"        content="Do you want to know what is your luck for today?" />
+  <meta property="og:image"              content="http://checkmylucktoday.com/fb-img.jpg" />
+  <meta property="og:image:alt"              content="Check your luck for the day here" />
+  <title>Is today my lucky day?</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102995394-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-102995394-3');
+  </script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+  
+  <main>
+    <div class="intro">
+      <h1>Checking your luck for today</h1>
+      <div id="loader"></div>
+    </div>
+    
+    <div class="luck-of-the-day">
+      <h2>Your luck of the day is:</h2>
+      <p id='current-luck'></p>
+      <div id="clockdiv">
+        <div>
+          <span class="hours"></span>
+          <div class="smalltext">Hours</div>
+        </div>
+        <div>
+          <span class="minutes"></span>
+          <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+          <span class="seconds"></span>
+          <div class="smalltext">Seconds</div>
+        </div>
+      </div>
+      <div class="last-luck">
+        <p>Your last luck is: </p>
+        <p id="last-luck"></p>
+      </div>
+      <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fcheckmylucktoday.com&layout=button_count&size=large&mobile_iframe=true&appId=374004366387436&width=84&height=28" width="84" height="28" style="border:none;overflow:hidden" scrolling="no"  frameborder="0" allowTransparency="true"></iframe>
+      <div class="lucky-background"></div>
+    </div>
+  </main>
+  
+  <footer>
+    <!-- <span>Designed and developed by Nasko Daskalov</span> -->
+    <ul class="social-links">
+      <li>
+        <a href="https://www.facebook.com/nasko.daskalov">
+          <i class="ion-social-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/naskodaskalov">
+          <i class="ion-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/nasko-daskalov-a7731a117/">
+          <i class="ion-social-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
