@@ -2,7 +2,7 @@
 
 
 html {
-  background: url('./background.jpg') no-repeat center center fixed; 
+  background: url('./images/background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -62,7 +62,7 @@ body {
 
 .luck-of-the-day::after {
   content: "";
-  background: url('./how-to-change-your-luck.jpg');
+  background: url('./images/how-to-change-your-luck.jpg');
   border-radius: 15px;
   opacity: 0.5;
   top: 0;
