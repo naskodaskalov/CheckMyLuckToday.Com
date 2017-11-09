@@ -3,7 +3,7 @@
     'new friend',
     'prosperity',
     'money',
-    'Travelling',
+    'travelling',
     'luck',
     'love',
     'health',
@@ -37,7 +37,6 @@
         randomLuck = arr[Math.floor(Math.random() * arr.length)]
         window.localStorage.setItem('last-luck', randomLuck)
         window.localStorage.setItem('last-entrance', new Date())
-        // setCookie('lastLuck', 'luck', 1)
         if (randomLuck.length > 20) {
           $('#current-luck').css('font-size', '40px')
         }
@@ -47,7 +46,6 @@
       randomLuck = arr[Math.floor(Math.random() * arr.length)]
       window.localStorage.setItem('last-luck', randomLuck)
       window.localStorage.setItem('last-entrance', new Date())
-      // setCookie('lastLuck', 'luck', 1)
       if (randomLuck.length > 20) {
         $('#current-luck').css('font-size', '40px')
       }
@@ -63,22 +61,6 @@ function addDays (date, days) {
   var result = new Date(date)
   result.setDate(result.getDate() + days)
   return result
-}
-
-function readCookie (cookieName) {
-  var re = new RegExp('[; ]' + cookieName + '=([^\\s;]*)')
-  var sMatch = (' ' + document.cookie).match(re)
-  if (cookieName && sMatch) return unescape(sMatch[1])
-  return ''
-}
-
-function setCookie (cookieName, cookieValue, nDays) {
-  var today = new Date()
-  var expire = new Date()
-  if (nDays == null || nDays === 0) nDays = 1
-  expire.setTime(today.getTime() + 3600000 * 24 * nDays)
-  document.cookie = cookieName + '=' + expire.toString() +
-  ';expires=' + expire.toUTCString()
 }
 
 function getTimeRemaining (endtime) {
