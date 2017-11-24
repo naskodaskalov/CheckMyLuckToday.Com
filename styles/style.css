@@ -2,7 +2,7 @@
 
 
 html {
-  background: url('./images/background.jpg') no-repeat center center fixed; 
+  background: url('../images/background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -62,7 +62,7 @@ body {
 
 .luck-of-the-day::after {
   content: "";
-  background: url('./images/how-to-change-your-luck.jpg');
+  background: url('../images/how-to-change-your-luck.jpg');
   border-radius: 15px;
   opacity: 0.5;
   top: 0;
@@ -148,7 +148,7 @@ p.newLuck:after {
   content:  "\201D";
 }
 
-@media (max-width: 980px) {
+@media screen and (max-width: 980px) {
   body {
     padding: 20px;
   }
